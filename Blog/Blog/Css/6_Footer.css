@@ -1,12 +1,12 @@
 
 footer {
     color: #7F7F7F;
-    width:720px;
+    width: 720px;
     text-align: center;
     font-size: 14px;
     margin: 0px auto;
     padding: 15px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
     footer #tag {

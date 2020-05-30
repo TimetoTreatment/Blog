@@ -1,4 +1,3 @@
-
 #main-navigation {
     border-top: 1px solid #BFBFBF;
     border-bottom: 1px solid #BFBFBF;
@@ -10,19 +9,15 @@
     position: relative;
 }
 
-    .outer-menu-item:hover {
-        font-weight:bold;
-    }
-
     .outer-menu-item #selected {
         background: #7F7F7F;
         color: white;
     }
 
-    .menu-title {
-        display: block;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        padding: 5px 20px;
-    }
+.menu-title {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}

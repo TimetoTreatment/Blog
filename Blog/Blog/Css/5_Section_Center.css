@@ -3,14 +3,14 @@
 
 #content {
     overflow: hidden;
-    border-bottom:1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
 }
 
 #main-section {
     float: left;
     width: 710px;
-    border-right:1px solid #BFBFBF;
-    padding:10px 10px 0 0;
+    border-right: 1px solid #BFBFBF;
+    padding: 10px 10px 0 0;
 }
 
 #main-aside {
