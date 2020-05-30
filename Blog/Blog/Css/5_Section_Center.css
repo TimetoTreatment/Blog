@@ -1,0 +1,23 @@
+/* body 태그의 너비: 960픽셀 */
+/* #page-wrapper 태그의 padding 속성으로 내용물 너비는 920픽셀 */
+
+#content {
+    overflow: hidden;
+    border-bottom:1px solid #BFBFBF;
+}
+
+#main-section {
+    float: left;
+    width: 710px;
+    border-right:1px solid #BFBFBF;
+    padding:10px 10px 0 0;
+}
+
+#main-aside {
+    float: right;
+    width: 200px;
+}
+
+article .border {
+    border: 1px solid #BFBFBF;
+}

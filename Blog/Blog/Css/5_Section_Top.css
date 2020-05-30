@@ -1,0 +1,25 @@
+article {
+    padding: 0 10px 20px 10px;
+}
+
+hr {
+    margin:0 auto;
+}
+
+.article-header {
+    padding: 20px 0;
+}
+
+.article-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.article-date {
+    font-size: 13px;
+}
+
+.article-body {
+    font-size: 14px;
+}

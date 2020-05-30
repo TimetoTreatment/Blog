@@ -1,0 +1,39 @@
+#main-header {
+    text-align: center;
+    padding: 15px 50px;
+}
+
+.master-title {
+    font-size: 38px;
+    color: #181818;
+}
+
+    .master-title:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+
+.master-description {
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 26px;
+    color: #7F7F7F;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.master-icon {
+    text-align: center;
+    height: 90px;
+}
+
+    .master-icon img {
+        margin: 0 15px;
+        transform: scale(0.8,0.8);
+    }
+
+        .master-icon img:hover {
+            opacity: 0.8;
+            transition: 0.2s;
+        }

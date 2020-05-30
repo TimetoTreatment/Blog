@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>사이버황제의 블로그</title>
+
+    <link rel="stylesheet" href="css/0_Global.css" />          <!-- Global -->
+    <link rel="stylesheet" href="css/1_Page.css" />            <!-- Page -->
+    <link rel="stylesheet" href="css/2_Header.css" />          <!-- Header -->
+    <link rel="stylesheet" href="css/3_Navigation.css" />      <!-- Navigation -->
+    <link rel="stylesheet" href="css/4_Search.css" />          <!-- Search -->
+    <link rel="stylesheet" href="css/5_Section_Center.css" />  <!-- Section_Center -->
+    <link rel="stylesheet" href="css/5_Section_Side.css" />    <!-- Section_Side -->
+    <link rel="stylesheet" href="css/5_Section_Top.css" />     <!-- Section_Top -->
+    <link rel="stylesheet" href="css/6_Footer.css" />          <!-- Footer -->
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <h1 class="master-title"><a href="Blog.html">사이버황제</a></h1>
+            <h2 class="master-description">&nbsp;Computer & Technology</h2>
+            <div class="master-icon">
+                <img src="Assets/header/game.png" alt="Game" />
+                <img src="Assets/header/computer.png" alt="Computer" />
+                <img src="Assets/header/technology.png" alt="Technology" />
+                <img src="Assets/header/review.png" alt="Review" />
+            </div>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <a href="Prologue.html" class="menu-title">프롤로그</a>
+                    </li>
+                    <li class="outer-menu-item">
+                        <a href="Blog.html" class="menu-title" id="selected">블로그</a>
+                    </li>
+                    <li class="outer-menu-item">
+                        <a href="Guestbook.html" class="menu-title">방명록</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search" />
+                        <input type="submit" class="input-search-submit" value="검색" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article>
+                    <div class="article-header" id="ad">
+                        <h1 id="article1" class="article-title">Windows 10 설치법 및 최적화</h1>
+                        <p class="article-date">2020년 05월 30일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="Assets/section/article3-1.png" width="685" />
+                        <br />
+                        <h2> 1. 머리말 </h2>
+                        <br />
+                        <p>
+                            &nbsp;운영체제는 컴퓨터를 운용하는 데에 있어 필수적인 프로그램으로, 일반적으로 Windows 10 Home을 사용합니다.
+                            컴퓨터나 노트북을 구매한 후 가장 먼저 해야 할 일 중 하나는 운영체제, 즉 윈도우 10을 설치하는 것입니다.
+                            운영체제의 <small>(재)</small>설치를 흔히 '포맷한다'라고 하지요.
+                        </p>
+                        <br />
+                        <p>
+                            &nbsp;시간이 흐름에 따라 윈도우 시리즈 또한 발전하였고, 설치하기가 점점 편리해졌습니다.
+                            하지만 윈도우를 처음 설치하시는 분들이라면 부팅 USB 준비, 설치 드라이브 선택,
+                            수많은 체크 상자 등 낯선 개념에 어려움을 겪으셨을 것입니다.
+                            이 글은 이러한 분들이 <u><b>윈도우 10을 쉽게 설치할 수 있도록 작성</b></u>되었습니다.
+                            또한 사용자별로 다를 수 있는 다양한 환경을 고려하였기 때문에, 여러가지 변수에 대처할 수 있습니다
+                            (예를 들어, 그림으로 설명된 글에서 그림과 내 화면이 똑같지 않거나 절차가 생략되어 있다면 당황하기 마련입니다.
+                            저는 이러한 것들을 최대한 고려하여 작성하였습니다).
+                            그리고 실생활에 도움이 되고자 하는 목적으로 쓴 글이므로,
+                            윈도우 10의 설치뿐만 아니라 실사용 준비 또한 다루었습니다.
+                        </p>
+                        <br />
+                        <p>
+                            &nbsp;서문이 길었네요. 머리말은 여기서 마치고 <u><b>2번 항목에서는 윈도우 설치</b></u>를,
+                            <u><b>3번 항목에서는 실사용 준비</b></u><small>(최적화)</small>를 다루겠습니다.
+                            시간이 없으신 분들은 <u>밑줄 친 부분</u>만 읽으셔도 됩니다. 물론 나머지 부분 또한 읽으시면 더 좋습니다.
+                        </p>
+                        <br /><br />
+                        <h2> 2. 설치 </h2>
+                        <br />
+                        <p>
+                            Windows 10을 설치하려면 몇 가지 <u><b>준비물</b></u>이 필요합니다.
+                            <br />
+                            &nbsp;- 윈도우 10을 설치할 컴퓨터 또는 노트북
+                            <br />
+                            &nbsp;- 8GB 이상의 <u>USB 메모리</u> ( DVD도 가능하지만, 오늘날에는 잘 쓰이지 않습니다 )
+                            <br />
+                            &nbsp;- 사용할 수 있으며 <u>인터넷에 연결된 다른 컴퓨터</u> 또는 노트북
+                            <br />
+                            <br />
+                            &nbsp;설치 파일을 더블 클릭하여 카카오톡, 크롬 등의 프로그램을 설치하신 추억이 있으실 겁니다.
+                            하지만 윈도우 10은 Bootable Usb Drive, 즉
+                            <u>부팅 가능한 USB 드라이브</u><small>( 이하 부팅 USB )</small><u>를 만든 후 이를 이용하여 설치합니다.</u>
+                            USB 메모리는 전자기기 매장이나 이마트, 다이소 등에서 판매하므로 쉽고 싸게 구매할 수 있습니다.
+                            그리고 USB 메모리를 부팅 USB로 만들기 위해서는 인터넷에 연결된 다른 컴퓨터가 필요합니다.
+                        </p>
+                        <br />
+                        <p align="center">
+                            <b>( ... )</b>
+                        </p>
+                        <br />
+                        <p align="center">
+                            <img src="Assets/section/article3-2.png" width="200" />
+                            <br />
+                            지금까지 윈도우 10을 설치하는 방법에 대해 알아보았습니다.
+                        </p>
+                    </div>
+                </article>
+                <hr />
+                <article>
+                    <div class="article-header">
+                        <h1 id="article2" class="article-title">PPT 템플릿</h1>
+                        <p class="article-date">2020년 05월 23일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="Assets/section/article2-1.png" width="685" />
+                        <br />
+                        <h2>1. 머리말 </h2>
+                        <br />
+                        <p>
+                            &nbsp;학교, 직장, 또는 가정에서 성공적인 프리젠테이션을 하는 것은 자신의 목적을 달성하는 데에 큰 도움이 됩니다.
+                            하지만 발표를 준비하기 이전에 큰 난관이 있습니다. 바로 발표 준비를 하는 것입니다.
+                            발표 준비에는 대본 작성, PPT 제작, 발표 연습 등이 있습니다. 이 글에서는 <b><u>PPT 제작에 참고할 수 있는 템플릿</u></b>을 제공합니다.
+                        </p>
+                        <br />
+                        <br />
+                        <h2>2. 템플릿</h2>
+                        <br />
+                        <p>
+                            이하 템플릿은 <b><u>Microsoft PowerPoint</u></b>로 제작하였습니다. 템플릿에는 <u><b>다음 항목이 포함</b></u>됩니다.
+                            <ul>
+                                <li>&nbsp;- 표지</li>
+                                <li>&nbsp;- 프로젝트 개요</li>
+                                <li>&nbsp;- 클래스 다이어그램</li>
+                                <li>&nbsp;- 목차</li>
+                                <li>&nbsp;- 중간 표지</li>
+                                <li>&nbsp;- 내용</li>
+                                <li>&nbsp;- 역할 분담</li>
+                            </ul>
+                        </p>
+                        <br />
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-2.png" width="650" />
+                            <br />
+                            <b>- 표지 -</b>
+                            <br />
+                            주제와 팀을 소개합니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-3.png" width="650" />
+                            <br />
+                            <b>- 프로젝트 개요 -</b>
+                            <br />
+                            프로젝트 또는 발표 자료를 간략하게 설명합니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-4.png" width="650" />
+                            <br />
+                            <b>- 클래스 다이어그램 -</b>
+                            <br />
+                            프로젝트를 도식화 한 다이어그램을 제공합니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-5.png" width="650" />
+                            <br />
+                            <b>- 목차 -</b>
+                            <br />
+                            발표의 목차입니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-6.png" width="650" />
+                            <br />
+                            <b>- 중간 표지 -</b>
+                            <br />
+                            이어질 내용을 소개합니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-7.png" width="650" />
+                            <br />
+                            <b>- 내용 -</b>
+                            <br />
+                            발표 내용입니다.
+                            <br /><br /><br />
+                        </p>
+                        <p align="center">
+                            <img class="border" src="Assets/section/article2-8.png" width="650" />
+                            <br />
+                            <b>- 역할 분담 -</b>
+                            <br />
+                            팀원의 역할 분담과 일정을 제시합니다.
+                            <br /><br />
+                        </p>
+                    </div>
+                </article>
+                <hr />
+                <article>
+                    <div class="article-header">
+                        <h1 id="article3" class="article-title">HWP 템플릿</h1>
+                        <p class="article-date">2020년 05월 16일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="Assets/section/article1-1.png" width="685" />
+                        <br /><br />
+                        <h2>1. 한컴오피스 템플릿</h2>
+                        <br />
+                        <p>
+                            &nbsp;문서는 정말 많은 곳에서 쓰입니다. 내용물도 물론 중요하지만, 깔끔하게 작성한 문서는 안 읽고 베길수가 없습니다.
+                            이 글에서는 <b><u>한컴오피스 문서 제작에 참고할 수 있는 템플릿</u></b>을 제공합니다.
+                        </p>
+                        <br /><br /><hr /><br />
+                        <p align="center">
+                            <img src="Assets/section/article1-2.png" />
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>최근 글</h3>
+                    <ul>
+                        <li><a href="#article1">- Windows10 설치법</a></li>
+                        <li><a href="#article2">- PPT 템플릿</a></li>
+                        <li><a href="#article3">- HWP 템플릿</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <div id="tag">
+                #CyberEmperor<br /><br />
+                #TimetoTreatment
+            </div>
+            <div id="icon">
+                <img src="Assets/footer/Contact.png" />
+            </div>
+            <div id="contact">
+                010 - 1234 - 1234<br /><br />
+                세종대학교 컴퓨터공학과
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
