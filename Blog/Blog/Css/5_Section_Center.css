@@ -18,6 +18,16 @@
     width: 200px;
 }
 
+article ul li {
+
+}
+
+article ul li:before {
+    content:'-';
+    padding:3px;
+}
+
+
 article .border {
     border: 1px solid #BFBFBF;
 }
