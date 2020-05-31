@@ -18,15 +18,36 @@
     width: 200px;
 }
 
-article ul li {
-
-}
-
 article ul li:before {
-    content:'-';
-    padding:3px;
+    content: '-';
+    padding: 3px;
 }
 
+section .horizon {
+    width: 710px;
+    margin: 0 auto;
+    border-top: 1px solid #7F7F7F;
+}
+
+section .horizon-half {
+    width: 450px;
+    margin: 30px auto;
+    border-top: 1px solid #BFBFBF;
+}
+
+.article-body h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.article-body .paragraph {
+    margin: 15px 0;
+}
+
+.article-body img {
+    display: block;
+    margin: 10px auto;
+}
 
 article .border {
     border: 1px solid #BFBFBF;
