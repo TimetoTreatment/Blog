@@ -1,4 +1,15 @@
-div.snip1132 {
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//
+// ImageEffect.css
+//
+//-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+    개요 : 이미지 호버링 효과
+    설명 :
+        - 프롤로그 페이지의 각 이미지 호버링 효과
+*/
+
+div.effect-highlight {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
@@ -12,20 +23,18 @@ div.snip1132 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-    div.snip1132 * {
-        -webkit-box-sizing: border-box;
+    div.effect-highlight * {
         box-sizing: border-box;
-        -webkit-transition: all 0.45s ease-in-out;
         transition: all 0.45s ease-in-out;
     }
 
-    div.snip1132 img {
+    div.effect-highlight img {
         max-width: 100%;
         position: relative;
         opacity: 1;
     }
 
-    div.snip1132 figcaption {
+    div.effect-highlight figcaption {
         position: absolute;
         top: 20px;
         left: 20px;
@@ -35,23 +44,21 @@ div.snip1132 {
         border-width: 0 1px;
     }
 
-    div.snip1132 .heading {
+    div.effect-highlight .heading {
         overflow: hidden;
-        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
-    div.snip1132 .caption {
+    div.effect-highlight .caption {
         overflow: hidden;
-        -webkit-transform: translateY(50%);
         transform: translateY(50%);
         position: absolute;
         width: 100%;
         bottom: 0;
     }
 
-    div.snip1132 h3,
-    div.snip1132 p {
+    div.effect-highlight h3,
+    div.effect-highlight p {
         display: table;
         margin: 0 auto;
         padding: 0 10px;
@@ -62,15 +69,15 @@ div.snip1132 {
         font-weight: 400;
     }
 
-        div.snip1132 h3 span,
-        div.snip1132 p span {
+        div.effect-highlight h3 span,
+        div.effect-highlight p span {
             font-weight: 800;
         }
 
-        div.snip1132 h3:before,
-        div.snip1132 p:before,
-        div.snip1132 h3:after,
-        div.snip1132 p:after {
+        div.effect-highlight h3:before,
+        div.effect-highlight p:before,
+        div.effect-highlight h3:after,
+        div.effect-highlight p:after {
             position: absolute;
             display: block;
             width: 1000%;
@@ -79,32 +86,32 @@ div.snip1132 {
             background: white;
         }
 
-        div.snip1132 h3:before,
-        div.snip1132 p:before {
+        div.effect-highlight h3:before,
+        div.effect-highlight p:before {
             left: -1000%;
         }
 
-        div.snip1132 h3:after,
-        div.snip1132 p:after {
+        div.effect-highlight h3:after,
+        div.effect-highlight p:after {
             right: -1000%;
         }
 
-        div.snip1132 h3:before,
-        div.snip1132 h3:after {
+        div.effect-highlight h3:before,
+        div.effect-highlight h3:after {
             top: 50%;
         }
 
-    div.snip1132 p {
+    div.effect-highlight p {
         font-size: 0.8em;
         font-weight: 500;
     }
 
-        div.snip1132 p:before,
-        div.snip1132 p:after {
+        div.effect-highlight p:before,
+        div.effect-highlight p:after {
             bottom: 50%;
         }
 
-    div.snip1132 a {
+    div.effect-highlight a {
         left: 0;
         right: 0;
         top: 0;
@@ -113,9 +120,8 @@ div.snip1132 {
         z-index: 1;
     }
 
-    div.snip1132:hover img,
-    div.snip1132.hover img {
+    div.effect-highlight:hover img,
+    div.effect-highlight.hover img {
         opacity: 0.35;
-        -webkit-transform: scale(1.15);
         transform: scale(1.15);
     }

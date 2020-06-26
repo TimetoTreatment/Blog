@@ -150,9 +150,6 @@
     <None Include="Css\BackgroundLines.css" />
     <None Include="Css\ImageEffect.css" />
     <None Include="Guestbook.html" />
-    <None Include="_Test.htm">
-      <DeploymentContent>true</DeploymentContent>
-    </None>
     <None Include="JavaScript\Clock.js" />
     <None Include="JavaScript\Lines.js" />
     <None Include="Prologue.html">

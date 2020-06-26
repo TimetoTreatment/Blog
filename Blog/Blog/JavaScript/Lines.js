@@ -11,10 +11,8 @@
 */
 
 function lines(options) {
-    // Set default options
     this.setDefaults();
 
-    // Check options param and override properties if they are not null
     if (typeof (options) != 'undefined') {
         if ('canvas' in options)
             this.setCanvas(options.canvas);
@@ -27,49 +25,32 @@ function lines(options) {
     return this;
 }
 
-/**
- * Default properties
- */
+
 lines.prototype.defaults = {
     canvas: 'lines-canvas',
     pieces: 10,
     color: '#EEE'
 };
 
-/**
- * setCanvas() sets canvas id which will contain lines
- *
- * @param <String> canvas
- */
+
 lines.prototype.setCanvas = function (canvas) {
     this.canvas = canvas;
     return this;
 };
 
-/**
- * setPieces() sets number of lines to be drawn
- *
- * @param <int> pieces
- */
+
 lines.prototype.setPieces = function (pieces) {
     this.pieces = pieces;
     return this;
 };
 
-/**
- * setColor() sets the hex color of the lines
- *
- * @param <String> color
- */
+
 lines.prototype.setColor = function (color) {
     this.color = color;
     return this;
 };
 
-/**
- * clearCanvas() clears the canvas
- * To avoid multiple drawings
- */
+
 lines.prototype.clearCanvas = function () {
     var cnv = document.getElementById(this.canvas);
     var ctx = cnv.getContext("2d");
@@ -78,9 +59,7 @@ lines.prototype.clearCanvas = function () {
     return this;
 };
 
-/**
- * setDefaults() sets the default options
- */
+
 lines.prototype.setDefaults = function () {
     this.canvas = this.defaults.canvas;
     this.pieces = this.defaults.pieces;
@@ -89,10 +68,7 @@ lines.prototype.setDefaults = function () {
     return this;
 };
 
-/**
- * draw() is the main method, clears the canvas and draws the lines
- * Based on the options provided
- */
+
 lines.prototype.draw = function () {
     this.clearCanvas();
 

@@ -37,9 +37,6 @@
     <None Include="Css\BackgroundLines.css">
       <Filter>CSS</Filter>
     </None>
-    <None Include="_Test.htm">
-      <Filter>HTML</Filter>
-    </None>
     <None Include="css\5_Section.css">
       <Filter>CSS</Filter>
     </None>

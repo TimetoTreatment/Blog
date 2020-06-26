@@ -1,3 +1,18 @@
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//
+// Section.css
+//
+//-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+    개요 : 메뉴 탐색기
+    설명 :
+        - 페이지 중앙의 본문 및 사이드 메뉴
+        - 크게 세 부분으로 나누어짐
+            1. 제목
+            2. 내용
+            3. 사이드 바
+*/
+
 /*******/
 /* Top */
 /*******/
@@ -27,31 +42,6 @@ hr {
 .article-body {
     font-size: 14px;
 }
-
-
-/********/
-/* Side */
-/********/
-.aside-list {
-    position: fixed;
-    width: 150px;
-    margin: 40px 5px;
-    padding: 20px 0 20px 20px;
-    border: 1px solid #BFBFBF;
-    border-radius: 5px;
-}
-
-    .aside-list > h3 {
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .aside-list li a {
-        margin-left: 8px;
-        font-size: 13px;
-        color: #6C6C6C;
-    }
-
 
 /**********/
 /* Center */
@@ -108,3 +98,27 @@ section .horizon-half {
 article .border {
     border: 1px solid #BFBFBF;
 }
+
+/********/
+/* Side */
+/********/
+.aside-list {
+    position: fixed;
+    width: 150px;
+    margin: 40px 5px;
+    padding: 20px 0 20px 20px;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+}
+
+    .aside-list > h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .aside-list li a {
+        margin-left: 8px;
+        font-size: 13px;
+        color: #6C6C6C;
+    }
+
