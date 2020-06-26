@@ -138,19 +138,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="css\0_Global.css" />
     <None Include="css\1_Page.css" />
     <None Include="css\2_Header.css" />
     <None Include="css\3_Navigation.css" />
     <None Include="css\4_Search.css" />
-    <None Include="css\5_Section_Center.css" />
-    <None Include="css\5_Section_Side.css" />
-    <None Include="css\5_Section_Top.css" />
+    <None Include="css\5_Section.css" />
     <None Include="Css\6_Footer.css" />
     <None Include="Blog.html">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="Css\BackgroundLines.css" />
+    <None Include="Css\ImageEffect.css" />
     <None Include="Guestbook.html" />
+    <None Include="_Test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="JavaScript\Clock.js" />
+    <None Include="JavaScript\Lines.js" />
     <None Include="Prologue.html">
       <DeploymentContent>true</DeploymentContent>
     </None>

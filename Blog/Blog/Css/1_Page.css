@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ¡®¸¼Àº °íµñ¡¯, ¡®Malgun Gothic¡¯, Gothic, sans-serif;
+}
+
+a {
+    color: #181818;
+    text-decoration: none;
+}
+
+    a:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+
+li {
+    list-style: none;
+}
+
 body {
     width: 960px;
     margin: 0 auto;
@@ -7,6 +27,6 @@ body {
 #page-wrapper {
     background: white;
     margin: 30px 0;
-    padding: 10px 10px;
+    padding: 10px 0;
     box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }

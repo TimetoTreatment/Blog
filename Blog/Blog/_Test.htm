@@ -2,20 +2,19 @@
 <html>
 <head>
     <title>사이버황제의 블로그</title>
+    <link rel="stylesheet" href="css/0_Global.css" />          <!-- Global -->
     <link rel="stylesheet" href="css/1_Page.css" />            <!-- Page -->
     <link rel="stylesheet" href="css/2_Header.css" />          <!-- Header -->
     <link rel="stylesheet" href="css/3_Navigation.css" />      <!-- Navigation -->
     <link rel="stylesheet" href="css/4_Search.css" />          <!-- Search -->
-    <link rel="stylesheet" href="css/5_Section.css" />         <!-- Section -->
+    <link rel="stylesheet" href="css/5_Section_Center.css" />  <!-- Section_Center -->
+    <link rel="stylesheet" href="css/5_Section_Side.css" />    <!-- Section_Side -->
+    <link rel="stylesheet" href="css/5_Section_Top.css" />     <!-- Section_Top -->
     <link rel="stylesheet" href="css/6_Footer.css" />          <!-- Footer -->
-    <link rel="stylesheet" href="css/ImageEffect.css" />
+    <link rel="stylesheet" href="css/ImageZoomEffect.css" />
     <link rel="stylesheet" href="css/BackgroundLines.css" />
-    <script src="JavaScript/Clock.js"></script>
+    <script src="JavaScript/Global.js"></script>
     <style>
-        .article-body img {
-            margin: 0 auto;
-        }
-
         .article-body .paragraph {
             width: 440px;
             margin: 10px auto;
@@ -59,18 +58,32 @@
             <div class="pull-left">
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
-                        <a href="Prologue.html" class="menu-title selected">프롤로그</a>
-                    </li>
-                    <li class="outer-menu-item">
-                        <a href="Blog.html" class="menu-title">블로그</a>
+                        <span class="menu-title">HTML5</span>
                         <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="Blog.html#article1">윈도우 설치</a></li>
-                            <li class="inner-menu-item"><a href="Blog.html#article2">PPT 템플릿</a></li>
-                            <li class="inner-menu-item"><a href="Blog.html#article3">한컴 템플릿</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
                         </ul>
                     </li>
                     <li class="outer-menu-item">
-                        <a href="Guestbook.html" class="menu-title">방명록</a>
+                        <span class="menu-title">CSS3</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">JavaScript</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -201,8 +214,8 @@
         </footer>
     </div>
 
-    <!-- jQuery : Background Lines -->
-    <script type="text/javascript" src="JavaScript/Lines.js"></script>
+    <!-- Script : Background Lines -->
+    <script type="text/javascript" src="JavaScript/lines.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script>
         var canvas = $('#lines-canvas');
@@ -212,7 +225,6 @@
         new lines().draw();
     </script>
 
-    <!-- jQuery : Navigation Menu Hover -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -225,3 +237,5 @@
     </script>
 </body>
 </html>
+
+

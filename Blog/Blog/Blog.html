@@ -2,18 +2,22 @@
 <html>
 <head>
     <title>사이버황제의 블로그</title>
-    <link rel="stylesheet" href="css/0_Global.css" />          <!-- Global -->
     <link rel="stylesheet" href="css/1_Page.css" />            <!-- Page -->
     <link rel="stylesheet" href="css/2_Header.css" />          <!-- Header -->
     <link rel="stylesheet" href="css/3_Navigation.css" />      <!-- Navigation -->
     <link rel="stylesheet" href="css/4_Search.css" />          <!-- Search -->
-    <link rel="stylesheet" href="css/5_Section_Center.css" />  <!-- Section_Center -->
-    <link rel="stylesheet" href="css/5_Section_Side.css" />    <!-- Section_Side -->
-    <link rel="stylesheet" href="css/5_Section_Top.css" />     <!-- Section_Top -->
+    <link rel="stylesheet" href="css/5_Section.css" />         <!-- Section -->
     <link rel="stylesheet" href="css/6_Footer.css" />          <!-- Footer -->
+    <link rel="stylesheet" href="css/BackgroundLines.css" />
+    <script src="JavaScript/Clock.js"></script>
 </head>
 <body>
+    <!-- BackGround Lines -->
+    <canvas id="lines-canvas"></canvas>
+
+    <!-- Page -->
     <div id="page-wrapper">
+
         <!-- Header -->
         <header id="main-header">
             <h1 class="master-title"><a href="Blog.html">사이버황제</a></h1>
@@ -25,6 +29,7 @@
                 <img src="Assets/header/review.png" alt="Review" />
             </div>
         </header>
+
         <!-- Nav -->
         <nav id="main-navigation">
             <div class="pull-left">
@@ -33,7 +38,12 @@
                         <a href="Prologue.html" class="menu-title">프롤로그</a>
                     </li>
                     <li class="outer-menu-item">
-                        <a href="Blog.html" class="menu-title" id="selected">블로그</a>
+                        <a href="Blog.html" class="menu-title selected">블로그</a>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#article1">윈도우 설치</a></li>
+                            <li class="inner-menu-item"><a href="#article2">PPT 템플릿</a></li>
+                            <li class="inner-menu-item"><a href="#article3">한컴 템플릿</a></li>
+                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <a href="Guestbook.html" class="menu-title">방명록</a>
@@ -41,18 +51,23 @@
                 </ul>
             </div>
             <div class="pull-right">
+
                 <!-- Search -->
                 <div class="search-bar">
-                    <form>
-                        <input type="text" class="input-search" />
-                        <input type="submit" class="input-search-submit" value="검색" />
+                    <form action="http://www.google.com/search" method="get">
+                        <input type="text" name="q" class="input-search" />
+                        <input type="submit" class="input-search-submit" value="구글링" />
                     </form>
                 </div>
             </div>
         </nav>
+
+        <!-- Content -->
         <div id="content">
-            <!-- Section -->
+
+            <!-- Main Section -->
             <section id="main-section">
+
                 <!-- Article 1 -->
                 <article>
                     <div class="article-header" id="ad">
@@ -114,6 +129,7 @@
                     </div>
                 </article>
                 <div class="horizon"></div>
+
                 <!-- Article 2 -->
                 <article>
                     <div class="article-header">
@@ -202,6 +218,7 @@
                     </div>
                 </article>
                 <div class="horizon"></div>
+
                 <!-- Article 3 -->
                 <article>
                     <div class="article-header">
@@ -231,7 +248,8 @@
                     </div>
                 </article>
             </section>
-            <!-- Section_Side -->
+
+            <!-- Side Section -->
             <aside id="main-aside">
                 <div class="aside-list">
                     <h3>최근 글</h3>
@@ -243,20 +261,50 @@
                 </div>
             </aside>
         </div>
+
         <!-- Footer -->
         <footer>
-            <div id="tag">
-                #CyberEmperor<br /><br />
-                #TimetoTreatment
+            <div class="footer-section1">
+                <div id="tag">
+                    #CyberEmperor<br /><br />
+                    #TimetoTreatment
+                </div>
+                <div id="icon">
+                    <a href="https://github.com/TimetoTreatment" target="_blank"><img src="Assets/footer/Contact.png" /></a>
+                </div>
+                <div id="contact">
+                    010 - 1234 - 1234<br /><br />
+                    세종대학교 컴퓨터공학과
+                </div>
             </div>
-            <div id="icon">
-                <a href="https://github.com/TimetoTreatment" target="_blank"><img src="Assets/footer/Contact.png" /></a>
-            </div>
-            <div id="contact">
-                010 - 1234 - 1234<br /><br />
-                세종대학교 컴퓨터공학과
+            <div class="horizon-half"></div>
+            <div class="footer-section2">
+                <div id="footerClock"></div>
             </div>
         </footer>
     </div>
+
+    <!-- jQuery : Background Lines -->
+    <script type="text/javascript" src="JavaScript/Lines.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        var canvas = $('#lines-canvas');
+        canvas.attr('height', $(window).height());
+        canvas.attr('width', $(window).width());
+
+        new lines().draw();
+    </script>
+
+    <!-- jQuery : Navigation Menu Hover -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').show();
+            }, function () {
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>
 </body>
 </html>
