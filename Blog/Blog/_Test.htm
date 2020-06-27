@@ -2,20 +2,19 @@
 <html>
 <head>
     <title>사이버황제의 블로그</title>
-    <link rel="stylesheet" href="css/1_Page.css" />             <!-- Page -->
-    <link rel="stylesheet" href="css/2_Header.css" />           <!-- Header -->
-    <link rel="stylesheet" href="css/3_Navigation.css" />       <!-- Navigation -->
-    <link rel="stylesheet" href="css/4_Search.css" />           <!-- Search -->
-    <link rel="stylesheet" href="css/5_Section.css" />          <!-- Section -->
-    <link rel="stylesheet" href="css/6_Footer.css" />           <!-- Footer -->
-    <link rel="stylesheet" href="css/ImageEffect.css" />        <!-- Hover Effect -->
-    <link rel="stylesheet" href="css/BackgroundLines.css" />    <!-- Background Lines -->
-    <script src="JavaScript/Clock.js"></script>                 <!-- Footer Clock -->
+    <link rel="stylesheet" href="css/0_Global.css" />          <!-- Global -->
+    <link rel="stylesheet" href="css/1_Page.css" />            <!-- Page -->
+    <link rel="stylesheet" href="css/2_Header.css" />          <!-- Header -->
+    <link rel="stylesheet" href="css/3_Navigation.css" />      <!-- Navigation -->
+    <link rel="stylesheet" href="css/4_Search.css" />          <!-- Search -->
+    <link rel="stylesheet" href="css/5_Section_Center.css" />  <!-- Section_Center -->
+    <link rel="stylesheet" href="css/5_Section_Side.css" />    <!-- Section_Side -->
+    <link rel="stylesheet" href="css/5_Section_Top.css" />     <!-- Section_Top -->
+    <link rel="stylesheet" href="css/6_Footer.css" />          <!-- Footer -->
+    <link rel="stylesheet" href="css/ImageZoomEffect.css" />
+    <link rel="stylesheet" href="css/BackgroundLines.css" />
+    <script src="JavaScript/Global.js"></script>
     <style>
-        .article-body img {
-            margin: 0 auto;
-        }
-
         .article-body .paragraph {
             width: 440px;
             margin: 10px auto;
@@ -59,26 +58,38 @@
             <div class="pull-left">
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
-                        <a href="Prologue.html" class="menu-title selected">프롤로그</a>
-                    </li>
-                    <li class="outer-menu-item">
-                        <a href="Blog.html" class="menu-title">블로그</a>
+                        <span class="menu-title">HTML5</span>
                         <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="Blog.html#article1">윈도우 설치</a></li>
-                            <li class="inner-menu-item"><a href="Blog.html#article2">PPT 템플릿</a></li>
-                            <li class="inner-menu-item"><a href="Blog.html#article3">한컴 템플릿</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
                         </ul>
                     </li>
                     <li class="outer-menu-item">
-                        <a href="Guestbook.html" class="menu-title">방명록</a>
+                        <span class="menu-title">CSS3</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">JavaScript</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="pull-right">
-
-                <!-- Search -->
                 <div class="search-bar">
-                    <form action="http://www.google.com/search" target="_blank" method="get">
+                    <form action="http://www.google.com/search" method="get">
                         <input type="text" name="q" class="input-search" />
                         <input type="submit" class="input-search-submit" value="구글링" />
                     </form>
@@ -94,13 +105,13 @@
 
                 <!-- Article -->
                 <article>
-                    <div class="article-header">
+                    <div class="article-header" id="ad">
                         <h1 id="article1" class="article-title">최근 글 목록</h1>
                     </div>
 
                     <!-- item 1 -->
                     <div class="article-body">
-                        <div class="effect-highlight">
+                        <div class="snip1132">
                             <img src="Assets/section/article3-1.png" alt="article3" />
                             <figcaption>
                                 <div class="heading">
@@ -123,7 +134,7 @@
 
                     <!-- item 2 -->
                     <div class="article-body">
-                        <div class="effect-highlight">
+                        <div class="snip1132">
                             <img src="Assets/section/article2-1.png" alt="article2" />
                             <figcaption>
                                 <div class="heading">
@@ -146,7 +157,7 @@
 
                     <!-- item 3 -->
                     <div class="article-body">
-                        <div class="effect-highlight">
+                        <div class="snip1132">
                             <img src="Assets/section/article1-1.png" alt="article1" />
                             <figcaption>
                                 <div class="heading">
@@ -173,9 +184,9 @@
                 <div class="aside-list">
                     <h3>최근 방문자</h3>
                     <ul>
-                        <li><a href="Guestbook.html#article1">- 샤코님</a></li>
-                        <li><a href="Guestbook.html#article2">- 트위치님</a></li>
-                        <li><a href="Guestbook.html#article3">- vkdlzm님</a></li>
+                        <li><a href="https://github.com/TimetoTreatment" target="_blank">- 샤코님</a></li>
+                        <li><a href="https://github.com/TimetoTreatment" target="_blank">- 트위치님</a></li>
+                        <li><a href="https://github.com/TimetoTreatment" target="_blank">- vkdlzm님</a></li>
                     </ul>
                 </div>
             </aside>
@@ -203,8 +214,8 @@
         </footer>
     </div>
 
-    <!-- jQuery : Background Lines -->
-    <script type="text/javascript" src="JavaScript/Lines.js"></script>
+    <!-- Script : Background Lines -->
+    <script type="text/javascript" src="JavaScript/lines.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script>
         var canvas = $('#lines-canvas');
@@ -214,7 +225,6 @@
         new lines().draw();
     </script>
 
-    <!-- jQuery : Navigation Menu Hover -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -227,3 +237,5 @@
     </script>
 </body>
 </html>
+
+
