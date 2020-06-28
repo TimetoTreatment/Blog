@@ -138,12 +138,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="css\1_Page.css" />
-    <None Include="css\2_Header.css" />
-    <None Include="css\3_Navigation.css" />
-    <None Include="css\4_Search.css" />
-    <None Include="css\5_Section.css" />
-    <None Include="Css\6_Footer.css" />
+    <None Include="css\Page.css" />
+    <None Include="css\Header.css" />
+    <None Include="css\Navigation.css" />
+    <None Include="css\Search.css" />
+    <None Include="css\Section.css" />
+    <None Include="Css\Footer.css" />
     <None Include="Blog.html">
       <DeploymentContent>true</DeploymentContent>
     </None>

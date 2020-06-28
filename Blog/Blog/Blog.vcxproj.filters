@@ -22,22 +22,7 @@
     <None Include="Guestbook.html">
       <Filter>HTML</Filter>
     </None>
-    <None Include="css\2_Header.css">
-      <Filter>CSS</Filter>
-    </None>
-    <None Include="css\3_Navigation.css">
-      <Filter>CSS</Filter>
-    </None>
-    <None Include="css\4_Search.css">
-      <Filter>CSS</Filter>
-    </None>
-    <None Include="Css\6_Footer.css">
-      <Filter>CSS</Filter>
-    </None>
     <None Include="Css\BackgroundLines.css">
-      <Filter>CSS</Filter>
-    </None>
-    <None Include="css\5_Section.css">
       <Filter>CSS</Filter>
     </None>
     <None Include="JavaScript\Clock.js">
@@ -46,10 +31,25 @@
     <None Include="JavaScript\Lines.js">
       <Filter>JavaScript</Filter>
     </None>
-    <None Include="css\1_Page.css">
+    <None Include="Css\ImageEffect.css">
       <Filter>CSS</Filter>
     </None>
-    <None Include="Css\ImageEffect.css">
+    <None Include="css\Page.css">
+      <Filter>CSS</Filter>
+    </None>
+    <None Include="css\Header.css">
+      <Filter>CSS</Filter>
+    </None>
+    <None Include="css\Navigation.css">
+      <Filter>CSS</Filter>
+    </None>
+    <None Include="css\Search.css">
+      <Filter>CSS</Filter>
+    </None>
+    <None Include="css\Section.css">
+      <Filter>CSS</Filter>
+    </None>
+    <None Include="Css\Footer.css">
       <Filter>CSS</Filter>
     </None>
   </ItemGroup>

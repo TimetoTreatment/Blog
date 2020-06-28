@@ -4,9 +4,9 @@
 //
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-    개요 : 사이트 소개
+    개요 : 페이지 푸터
     설명 :
-        - 페이지 하단 사이트 소개
+        - 사이트 정보 제공
         - 시계 배치
 */
 
@@ -20,29 +20,29 @@ footer .footer-section1 {
     overflow: hidden;
 }
 
-    footer #tag {
-        width: 300px;
-        float: left;
-        font-weight: bold;
-        padding: 5px 10px;
-        text-align: right;
+footer #tag {
+    width: 300px;
+    float: left;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+footer #icon {
+    float: left;
+    text-align: left;
+}
+
+    footer #icon:hover {
+        opacity: 0.8;
+        transition: 0.2s;
     }
 
-    footer #icon {
-        float: left;
-        text-align: left;
-    }
-
-        footer #icon:hover {
-            opacity: 0.8;
-            transition: 0.2s;
-        }
-
-    footer #contact {
-        float: left;
-        padding: 5px 10px;
-        text-align: left;
-    }
+footer #contact {
+    float: left;
+    padding: 5px 10px;
+    text-align: left;
+}
 
 footer .footer-section2 {
     color: #6F6F6F;
